@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "created_on": "2026-10-24",
+  "camera": {"model": "Nikon Z6III", "region": "China mainland (user reported)", "firmware": null, "firmware_target": "C 2.01", "target_verified_on": "2026-10-26", "target_basis": "user requested latest official firmware"},
+  "target_simulations": ["Classic Neg", "Nostalgic Neg", "Classic Chrome", "Ricoh GR III Positive Film", "Ricoh GR III Negative Film"],
+  "profile_status": {
+    "Classic Neg": "official_lut_reference_only",
+    "Nostalgic Neg": "reference_missing",
+    "Classic Chrome": "official_lut_reference_only",
+    "Ricoh GR III Positive Film": "qualitative_reference_only",
+    "Ricoh GR III Negative Film": "qualitative_reference_only"
+  },
+  "status": "desktop_CC_NC_pilot_unvalidated",
+  "experiments": [
+    {"id": "E01", "question": "官方 LUT 是否被正确执行？", "requires": ["official_zip_and_hash", "input_output_color_contract"], "outputs": ["cube_inventory", "independent_renderer_comparison"], "status": "partial_cube_inventory_complete"},
+    {"id": "E02", "question": "尼康输入适配后在实景上是否稳定？", "requires": ["E01_pass", "nikon_samples", "fixed_decode_pipeline"], "outputs": ["desktop_reference", "held_out_scene_review"], "status": "pilot_unvalidated_exposure_and_gamut"},
+    {"id": "E03", "question": "NP3 能接近电脑参考到什么程度？", "requires": ["E02_review", "nx_studio_version", "known_good_np3"], "outputs": ["fitted_np3", "nx_studio_roundtrip", "camera_jpeg_validation"], "status": "calibration_pack_binary_validated_camera_pending"},
+    {"id": "E04", "question": "特定 NP3 实现细节是否可用 REA 验证？", "requires": ["specific_unresolved_question", "versioned_target", "rea_provider_preflight"], "outputs": ["evidence_log", "controlled_behavior_comparison"], "status": "optional_not_started"}
+  ]
+}

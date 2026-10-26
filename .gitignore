@@ -1,0 +1,20 @@
+# Private original images and experimental derivatives
+data/originals/
+data/derived/
+data/manifests/captures.csv
+outputs/
+reports/*
+!reports/public-status.md
+
+# Reference archives and cloned third-party code are not redistributed
+references/official/
+references/community/
+
+.vendor/
+__pycache__/
+*.pyc
+.venv/
+.cache/
+
+# Only validated, independently authored profiles should be moved to release/
+release/*.zip

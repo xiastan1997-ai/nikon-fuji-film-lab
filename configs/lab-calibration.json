@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "purpose": "Single-variable Nikon Flexible Color calibration; not film simulations",
+  "firmware_target": "Z6III C 2.01",
+  "profiles": [
+    {"id": "neutral", "name": "LAB_NEUTRAL", "options": {}},
+    {"id": "saturation_p20", "name": "LAB_SAT_P20", "options": {"saturation": 20}},
+    {"id": "contrast_p20", "name": "LAB_CON_P20", "options": {"contrast": 20}},
+    {"id": "blue_hue_p20", "name": "LAB_BLUE_H20", "options": {"colorBlender": {"blue": {"hue": 20}}}},
+    {"id": "blue_chroma_m20", "name": "LAB_BLUE_Cm20", "options": {"colorBlender": {"blue": {"chroma": -20}}}},
+    {"id": "blue_brightness_p20", "name": "LAB_BLUE_B20", "options": {"colorBlender": {"blue": {"brightness": 20}}}},
+    {"id": "warm_highlights", "name": "LAB_HI_WARM", "options": {"colorGrading": {"highlights": {"hue": 45, "chroma": 10}}}},
+    {"id": "cool_shadows", "name": "LAB_SH_COOL", "options": {"colorGrading": {"shadows": {"hue": 220, "chroma": 10}}}},
+    {"id": "identity_curve", "name": "LAB_CURVE_ID", "options": {"identityToneCurve": true}}
+  ]
+}

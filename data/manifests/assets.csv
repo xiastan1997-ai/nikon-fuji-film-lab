@@ -1,0 +1,9 @@
+﻿asset_id,source_id,url,expected_role,local_relative_path,version,commit,sha256,status
+A01,S01,https://www.fujifilm-x.com/global/support/download/lut/,official_LUT_archive,references/official/gfx-eterna-55-3d-lut-v110.zip,1.10,,FEBFC7050999620651CA0CF162BF8B499970EF270B4DA632765B61B958CF7940,acquired_zip_verified
+A02,S02,https://dl.fujifilm-x.com/support/lut/GFX_ETERNA_WhitePaper_260206_v101.pdf,official_whitepaper,references/official/GFX_ETERNA_WhitePaper_260206_v101.pdf,1.01,,C77D1BDF159199ED9682375DF9F7A09EBBA5B03134220F4902D81B552BE7BD20,acquired_pdf_text_inspected
+A03,S03,https://github.com/morluto/rea,tool_source_documentation,references/community/rea/,,,,pending_download
+A04,S06,https://github.com/pyrocat101/Fujifilm-LUTs,community_transform_reference,references/community/Fujifilm-LUTs/,,c687686384bbe6983c7d20d5ade21068d08dfbf8,,cloned_research_only_no_license
+A05,S07,https://github.com/noobsaibot666/nikon_cps_generator-converter,np3_reference,references/community/nikon_cps_generator-converter/,,5200e9d693891491afdac84c367bbd046fb2f3bd,,cloned_research_only_no_license
+A06,S11,https://github.com/shouryan01/Nikon-Recipes,community_baseline_np3,references/community/Nikon-Recipes/,,2458e53bd07538749d3a30b5a6360f8ae18996e2,,cloned_research_only_no_license
+A07,S13,https://download.adobe.com/pub/adobe/dng/win/AdobeDNGConverter_x64_16_5.exe,raw_conversion_tool,references/official/AdobeDNGConverter_x64_16_5.exe,16.5,,F8AA90D62D78E75C432565C54256EE1D8FC9E1922BC5DF0E012236ADA320D33C,acquired_signature_valid_installed_private
+A08,S17,https://github.com/ssssota/nikon-flexible-color-picture-control,MIT_NP3_reader_writer,third_party/nikon-flexible-color-picture-control/,1.0.0,ed0397fbf1e4d4f2bc11ab3070522c613667d359,,vendored_MIT_license_preserved_28_tests_passed
